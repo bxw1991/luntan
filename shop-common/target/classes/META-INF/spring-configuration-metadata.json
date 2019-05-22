@@ -1,0 +1,27 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.shop.common.configProperties.properties.ShopProperties",
+      "name": "shop",
+      "type": "com.shop.common.configProperties.properties.ShopProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.shop.common.configProperties.properties.ShopProperties",
+      "name": "shop.qiniuyun",
+      "type": "com.shop.common.configProperties.properties.QiniuProperties"
+    },
+    {
+      "sourceType": "com.shop.common.configProperties.properties.ShopProperties",
+      "name": "shop.swagger",
+      "type": "com.shop.common.configProperties.properties.SwaggerProperties"
+    },
+    {
+      "sourceType": "com.shop.common.configProperties.properties.ShopProperties",
+      "name": "shop.we-chat",
+      "type": "com.shop.common.configProperties.properties.WeChatProperties"
+    }
+  ]
+}
