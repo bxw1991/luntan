@@ -18,10 +18,6 @@
             <version>1.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>mysql</groupId>
@@ -114,6 +110,10 @@
             <artifactId>qiniu-java-sdk</artifactId>
             <version>7.2.18</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
         </dependency>
 
     </dependencies>

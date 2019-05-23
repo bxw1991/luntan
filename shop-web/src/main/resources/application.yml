@@ -36,6 +36,11 @@ spring:
         login-password: admin
   application:
     name: shop
+  redis:
+    host: 127.0.0.1
+    password:
+    port: 6379
+    timeout: 0
 security:
   basic:
     enabled: false
@@ -52,3 +57,5 @@ shop:
     oss:
       privateHost: pr9tkbtzj.bkt.clouddn.com
       publicHost: pr9tkbtzj.bkt.clouddn.com
+
+
