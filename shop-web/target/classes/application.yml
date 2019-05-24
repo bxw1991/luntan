@@ -1,5 +1,6 @@
 server:
   port: 8090
+  context-path: /tz
 mybatis:
   type-aliases-package: com.shop.domain
   mapper-locations: classpath:mapper/*.xml
@@ -57,5 +58,3 @@ shop:
     oss:
       privateHost: pr9tkbtzj.bkt.clouddn.com
       publicHost: pr9tkbtzj.bkt.clouddn.com
-
-

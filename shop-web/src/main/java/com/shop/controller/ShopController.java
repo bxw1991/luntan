@@ -20,9 +20,9 @@ import java.awt.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/product")
+@RequestMapping("/shop")
 @Api(value = "Web-ProductController",produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-public class ProductController {
+public class ShopController {
 
     @Autowired
     private ProductCategoryService productCategoryService;
@@ -32,7 +32,7 @@ public class ProductController {
      * 小程序简化类目操作，只分一级类目，非类目树
      * @return
      */
-    @GetMapping("/listCategory")
+    @GetMapping("/goods/category/all")
     @ApiOperation(httpMethod = "GET",value = "获取商品类目")
     public Wrapper<List<CategoryVo>> listCategory() {
         List<CategoryVo> categoryList = productCategoryService.getCategoryList();
