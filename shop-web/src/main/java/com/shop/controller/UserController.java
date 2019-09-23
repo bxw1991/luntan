@@ -3,6 +3,8 @@ package com.shop.controller;
 
 import com.shop.common.utils.WrapMapper;
 import com.shop.common.utils.Wrapper;
+import com.shop.domain.User;
+import com.shop.dto.UserDto;
 import com.shop.service.WeChatService;
 import com.shop.vo.WeChatInfo;
 import io.swagger.annotations.Api;
@@ -21,24 +23,22 @@ public class UserController {
     @Autowired
     public WeChatService weChatService;
 
-    @PostMapping("/wxapp/login")
+    @PostMapping("/login")
     @ApiOperation(value = "获取微信openId,session_key", httpMethod = "POST")
-    public Wrapper<WeChatInfo> getWechatToken(@RequestParam String code) {
-
-        WeChatInfo weChatInfo = weChatService.getWeChatInfo(code);
+    public Wrapper<WeChatInfo> getWechatToken(UserDto userDto) {
+        WeChatInfo weChatInfo = weChatService.getWeChatInfo(userDto);
         return WrapMapper.ok(weChatInfo);
     }
 
 
     @GetMapping("/check-token")
-    @ApiOperation(value = "检查token是否失效",httpMethod = "GET")
-    public Wrapper checkToken(@RequestParam String token){
+    @ApiOperation(value = "检查token是否失效", httpMethod = "GET")
+    public Wrapper checkToken(@RequestParam String token) {
         boolean b = weChatService.checkToken(token);
-        if (b){
+        if (b) {
             return WrapMapper.ok();
         }
-        return WrapMapper.wrap(600,"session_key过期");
+        return WrapMapper.wrap(600, "session_key过期");
     }
-
 
 }

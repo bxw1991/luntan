@@ -30,15 +30,15 @@
 
         <!-- 设置要生成代码的表 -->
         <!--<table tableName="tbl_rmc_warehouse_area" domainObjectName="RmcWarehouseArea">-->
-            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
         <!--</table>-->
         <!--<table tableName="tbl_rmc_device_detail" domainObjectName="RmcDeviceDetail">-->
-            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
         <!--</table>-->
 
-        <table tableName="ym_shop_product_category" domainObjectName="ProductCategory">
+        <table tableName="points_detail" domainObjectName="PointsDetail">
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
 
-        </context>
-    </generatorConfiguration>
+    </context>
+</generatorConfiguration>

@@ -1,8 +1,11 @@
 package com.shop.domain;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.math.BigDecimal;
 import java.util.Date;
-import javax.persistence.*;
 
 public class Article {
     /**
@@ -53,8 +56,6 @@ public class Article {
 
     private Long looks;
 
-    @Column(name = "article_id")
-    private Long articleId;
 
     private BigDecimal latitude;
 
@@ -247,19 +248,7 @@ public class Article {
         this.looks = looks;
     }
 
-    /**
-     * @return article_id
-     */
-    public Long getArticleId() {
-        return articleId;
-    }
 
-    /**
-     * @param articleId
-     */
-    public void setArticleId(Long articleId) {
-        this.articleId = articleId;
-    }
 
     /**
      * @return latitude

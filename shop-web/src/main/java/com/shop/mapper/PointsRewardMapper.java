@@ -1,7 +1,11 @@
 package com.shop.mapper;
 
+import com.shop.common.core.mybatis.MyMapper;
 import com.shop.domain.PointsReward;
-import tk.mybatis.mapper.common.Mapper;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 
-public interface PointsRewardMapper extends Mapper<PointsReward> {
+@Component
+@Mapper
+public interface PointsRewardMapper extends MyMapper<PointsReward> {
 }

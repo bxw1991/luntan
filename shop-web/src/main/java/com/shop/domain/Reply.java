@@ -1,7 +1,10 @@
 package com.shop.domain;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.Date;
-import javax.persistence.*;
 
 public class Reply {
     @Id
@@ -11,17 +14,16 @@ public class Reply {
     @Column(name = "comment_id")
     private Long commentId;
 
-    /**
-     * 回去目标id
-     */
-    @Column(name = "reply_id")
-    private Long replyId;
 
     /**
      * 评论用户openid
      */
     @Column(name = "from_openid")
     private String fromOpenid;
+
+
+    @Column(name = "reply_id")
+    private Long replyId;
 
     /**
      * 目标用户openid
@@ -82,18 +84,14 @@ public class Reply {
      *
      * @return reply_id - 回去目标id
      */
-    public Long getReplyId() {
-        return replyId;
-    }
+
 
     /**
      * 设置回去目标id
      *
      * @param replyId 回去目标id
      */
-    public void setReplyId(Long replyId) {
-        this.replyId = replyId;
-    }
+
 
     /**
      * 获取评论用户openid
@@ -227,5 +225,13 @@ public class Reply {
      */
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    public Long getReplyId() {
+        return replyId;
+    }
+
+    public void setReplyId(Long replyId) {
+        this.replyId = replyId;
     }
 }

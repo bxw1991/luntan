@@ -3,7 +3,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <modules>
-        <module>shop-common</module>
         <module>shop-generator</module>
         <module>shop-security</module>
         <module>shop-web</module>
@@ -48,6 +47,7 @@
         <fastjson.version>1.2.29</fastjson.version>
         <modelmapper.version>1.1.2</modelmapper.version>
         <rocketmq.version>4.1.0-incubating</rocketmq.version>
+        <springfox.version>2.7.0</springfox.version>
     </properties>
 
     <developers>
@@ -217,31 +217,31 @@
             </dependency>
 
             <!--<dependency>-->
-                <!--<groupId>com.aliyun</groupId>-->
-                <!--<artifactId>aliyun-java-sdk-core</artifactId>-->
-                <!--<version>3.2.2</version>-->
+            <!--<groupId>com.aliyun</groupId>-->
+            <!--<artifactId>aliyun-java-sdk-core</artifactId>-->
+            <!--<version>3.2.2</version>-->
             <!--</dependency>-->
             <!--<dependency>-->
-                <!--<groupId>com.aliyun</groupId>-->
-                <!--<artifactId>aliyun-java-sdk-dysmsapi</artifactId>-->
-                <!--<version>1.1.0</version>-->
+            <!--<groupId>com.aliyun</groupId>-->
+            <!--<artifactId>aliyun-java-sdk-dysmsapi</artifactId>-->
+            <!--<version>1.1.0</version>-->
             <!--</dependency>-->
             <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.aliyun.mns/aliyun-sdk-mns &ndash;&gt;-->
             <!--<dependency>-->
-                <!--<groupId>com.aliyun.mns</groupId>-->
-                <!--<artifactId>aliyun-sdk-mns</artifactId>-->
-                <!--<version>1.1.8.4</version>-->
+            <!--<groupId>com.aliyun.mns</groupId>-->
+            <!--<artifactId>aliyun-sdk-mns</artifactId>-->
+            <!--<version>1.1.8.4</version>-->
             <!--</dependency>-->
             <!--<dependency>-->
-                <!--<groupId>com.aliyun.mns</groupId>-->
-                <!--<artifactId>alicom-mns-receive-sdk</artifactId>-->
-                <!--<version>1.0</version>-->
+            <!--<groupId>com.aliyun.mns</groupId>-->
+            <!--<artifactId>alicom-mns-receive-sdk</artifactId>-->
+            <!--<version>1.0</version>-->
             <!--</dependency>-->
 
             <!--<dependency>-->
-                <!--<groupId>org.apache.rocketmq</groupId>-->
-                <!--<artifactId>rocketmq-client</artifactId>-->
-                <!--<version>${rocketmq.version}</version>-->
+            <!--<groupId>org.apache.rocketmq</groupId>-->
+            <!--<artifactId>rocketmq-client</artifactId>-->
+            <!--<version>${rocketmq.version}</version>-->
             <!--</dependency>-->
             <!-- alipay start-->
             <dependency>
@@ -308,9 +308,9 @@
             </dependency>
 
             <!--<dependency>-->
-                <!--<groupId>com.liuzm.paascloud</groupId>-->
-                <!--<artifactId>elastic-job-lite-starter</artifactId>-->
-                <!--<version>1.0</version>-->
+            <!--<groupId>com.liuzm.paascloud</groupId>-->
+            <!--<artifactId>elastic-job-lite-starter</artifactId>-->
+            <!--<version>1.0</version>-->
             <!--</dependency>-->
             <dependency>
                 <groupId>mysql</groupId>
@@ -338,14 +338,14 @@
                 <version>${curator.version}</version>
             </dependency>
             <!--<dependency>-->
-                <!--<groupId>io.github.openfeign.form</groupId>-->
-                <!--<artifactId>feign-form</artifactId>-->
-                <!--<version>${feign.form.spring.version}</version>-->
+            <!--<groupId>io.github.openfeign.form</groupId>-->
+            <!--<artifactId>feign-form</artifactId>-->
+            <!--<version>${feign.form.spring.version}</version>-->
             <!--</dependency>-->
             <!--<dependency>-->
-                <!--<groupId>io.github.openfeign.form</groupId>-->
-                <!--<artifactId>feign-form-spring</artifactId>-->
-                <!--<version>${feign.form.spring.version}</version>-->
+            <!--<groupId>io.github.openfeign.form</groupId>-->
+            <!--<artifactId>feign-form-spring</artifactId>-->
+            <!--<version>${feign.form.spring.version}</version>-->
             <!--</dependency>-->
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -359,9 +359,9 @@
                 <version>${fastjson.version}</version>
             </dependency>
             <!--<dependency>-->
-                <!--<groupId>io.zipkin.java</groupId>-->
-                <!--<artifactId>zipkin-autoconfigure-collector-rabbitmq</artifactId>-->
-                <!--<version>2.3.1</version>-->
+            <!--<groupId>io.zipkin.java</groupId>-->
+            <!--<artifactId>zipkin-autoconfigure-collector-rabbitmq</artifactId>-->
+            <!--<version>2.3.1</version>-->
             <!--</dependency>-->
             <dependency>
                 <groupId>net.logstash.logback</groupId>

@@ -51,11 +51,11 @@
             <artifactId>mybatis-spring</artifactId>
             <version>1.2.2</version>
         </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.0.18</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba</groupId>-->
+            <!--<artifactId>druid</artifactId>-->
+            <!--<version>1.0.18</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
@@ -67,11 +67,11 @@
             <artifactId>mapper</artifactId>
             <version>3.3.9</version>
         </dependency>
-        <dependency>
-            <groupId>com.liuzm.mybatis</groupId>
-            <artifactId>mybatis-generator</artifactId>
-            <version>1.0</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.liuzm.mybatis</groupId>-->
+            <!--<artifactId>mybatis-generator</artifactId>-->
+            <!--<version>1.0</version>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>

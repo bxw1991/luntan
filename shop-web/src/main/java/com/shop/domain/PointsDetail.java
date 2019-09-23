@@ -1,7 +1,7 @@
 package com.shop.domain;
 
-import java.util.Date;
 import javax.persistence.*;
+import java.util.Date;
 
 @Table(name = "points_detail")
 public class PointsDetail {
@@ -12,8 +12,7 @@ public class PointsDetail {
     /**
      * 用户id
      */
-    @Column(name = "user_id")
-    private Long userId;
+    private String openid;
 
     @Column(name = "points_state")
     private Integer pointsState;
@@ -48,22 +47,12 @@ public class PointsDetail {
         this.id = id;
     }
 
-    /**
-     * 获取用户id
-     *
-     * @return user_id - 用户id
-     */
-    public Long getUserId() {
-        return userId;
+    public String getOpenid() {
+        return openid;
     }
 
-    /**
-     * 设置用户id
-     *
-     * @param userId 用户id
-     */
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public void setOpenid(String openid) {
+        this.openid = openid;
     }
 
     /**

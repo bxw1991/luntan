@@ -1,7 +1,11 @@
 package com.shop.mapper;
 
+import com.shop.common.core.mybatis.MyMapper;
 import com.shop.domain.User;
-import tk.mybatis.mapper.common.Mapper;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 
-public interface UserMapper extends Mapper<User> {
+@Component
+@Mapper
+public interface UserMapper extends MyMapper<User> {
 }

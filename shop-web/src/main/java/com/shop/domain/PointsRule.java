@@ -1,7 +1,7 @@
 package com.shop.domain;
 
-import java.util.Date;
 import javax.persistence.*;
+import java.util.Date;
 
 @Table(name = "points_rule")
 public class PointsRule {

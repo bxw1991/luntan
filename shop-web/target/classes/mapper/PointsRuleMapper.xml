@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shop.mapper.PointsRuleMapper" >
+  <resultMap id="BaseResultMap" type="com.shop.domain.PointsRule" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="rule_content" property="ruleContent" jdbcType="VARCHAR" />
+    <result column="points_score" property="pointsScore" jdbcType="INTEGER" />
+    <result column="is_set_upper" property="isSetUpper" jdbcType="INTEGER" />
+    <result column="upper_value" property="upperValue" jdbcType="INTEGER" />
+    <result column="start_time" property="startTime" jdbcType="TIMESTAMP" />
+    <result column="end_time" property="endTime" jdbcType="TIMESTAMP" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="field01" property="field01" jdbcType="VARCHAR" />
+    <result column="field02" property="field02" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

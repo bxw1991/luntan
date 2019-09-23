@@ -12,20 +12,20 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ControllerAdvice
-public class  GlobalExceptionHandler {
+public class GlobalExceptionHandler {
 
     @ExceptionHandler(IllegalArgumentException.class)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
-    public Wrapper illegalArgumentException(IllegalArgumentException e){
-        return WrapMapper.wrap(ErrorCodeEnum.GL99990100.code(),e.getMessage());
+    public Wrapper illegalArgumentException(IllegalArgumentException e) {
+        return WrapMapper.wrap(ErrorCodeEnum.GL99990100.code(), e.getMessage());
     }
 
 
     @ExceptionHandler
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
-    public Wrapper bizException(BusinessException e){
+    public Wrapper bizException(BusinessException e) {
         return WrapMapper.wrap(e.getCode() == 0 ? Wrapper.ERROR_CODE : e.getCode(), e.getMessage());
     }
 
